@@ -12,6 +12,6 @@ y = input("Enter user name: ")
 # Question 3
 z = input("Enter your password: ")
 if y == "Dudu" and z == "123456":
-    print("Welcome Mr Dudu")
+    print("Welcome Mr. Dudu")
 else:
     print("Your user name or password is incorrect.")

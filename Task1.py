@@ -15,3 +15,7 @@ if y == "Dudu" and z == "123456":
     print("Welcome Mr. Dudu")
 else:
     print("Your user name or password is incorrect.")
+
+# Question 4
+m = input("Enter your gender: ")
+print("Your gender:", m)

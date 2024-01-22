@@ -58,5 +58,6 @@ res.columns = ['age_Mean','age_Max','age_Min','sal_Mean','sal_Max', 'sal_Min']
 print(res)
 
 ## Question 4:
-
-
+table = pd.pivot_table(df, values=['age','salary'], index=['gender'], \
+                       aggfunc={'age':["mean","max","min"], 'salary':["mean","max","min"]})
+print(table)

@@ -41,6 +41,7 @@ df1.to_csv(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework
 ## Question 3:
 df2 = df[(df["age"]<23) & (df["gender"] == "M")]
 len(df2)
-df2.to_json(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\new_data.csv', indent=4,force_ascii=False)
+df2.to_json(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\new_data.json', indent=4,force_ascii=False)
 
 ######## Task 2 #########
+

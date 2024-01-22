@@ -48,5 +48,6 @@ df2.to_json(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homewor
 df.iloc[16,2:5]
 
 ## Question 2:
+df.loc[24:27,['firstName','age']]
 
-
+## Question 3:

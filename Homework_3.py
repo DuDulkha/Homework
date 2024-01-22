@@ -51,3 +51,12 @@ df.iloc[16,2:5]
 df.loc[24:27,['firstName','age']]
 
 ## Question 3:
+res = df.groupby(['gender']).agg({'age': ["mean","max","min"], 'salary': ["mean","max","min"]})
+res.columns
+len(res.columns)
+res.columns = ['age_Mean','age_Max','age_Min','sal_Mean','sal_Max', 'sal_Min']
+print(res)
+
+## Question 4:
+
+

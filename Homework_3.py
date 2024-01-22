@@ -44,4 +44,9 @@ len(df2)
 df2.to_json(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\new_data.json', indent=4,force_ascii=False)
 
 ######## Task 2 #########
+## Question 1:
+df.iloc[16,2:5]
+
+## Question 2:
+
 

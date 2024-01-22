@@ -21,7 +21,7 @@ for i in range(num_rows):
         f"{''.join(random.choices(string.ascii_uppercase, k=2))}{random.randint(0, 99):02d}",                                               # Column 4
         random.randint(18, 60),                                                                                                             # Column 5
         random.randint(1, 40),                                                                                                              # Column 6
-        round(random.normalvariate(df['salary'].mean(), df['salary'].std()),1),                                                                      # Column 7    
+        round(random.normalvariate(df['salary'].mean(), df['salary'].std()),1),                                                             # Column 7    
         random.choice(["F", "M"]),                                                                                                          # Column 8
         datetime.date.fromtimestamp( \                                                                                                      
                 random.uniform(datetime.datetime.timestamp(datetime.datetime.now()), \
@@ -39,5 +39,8 @@ len(df1)
 df1.to_csv(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\new_data.csv',encoding='utf-8-sig')
 
 ## Question 3:
+df2 = df[(df["age"]<23) & (df["gender"] == "M")]
+len(df2)
+df2.to_json(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\new_data.csv', indent=4,force_ascii=False)
 
 ######## Task 2 #########

@@ -94,4 +94,10 @@ list2=df["lastName"]
 for i in zip(list1, list2):
     print(i)
 
-    
+## Question 2:
+for i, item in enumerate(list1):
+    print(i, item)
+
+for count, value in enumerate(list2):
+    print(count, value)   
+ 

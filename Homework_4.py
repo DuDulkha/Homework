@@ -54,6 +54,12 @@ print(df3_even)
 df3_even = list(filter(lambda i: (i%2 == 0), df3))
 print(df3_even)
 
+## Question 3:
+df3_x10 = list(map(lambda i: i * 10, df3))
+print(df3_x10)
+
+
+
 
      
 

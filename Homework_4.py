@@ -20,6 +20,14 @@ df1 = pd.DataFrame(df1,columns=df.columns)
 print(df1)
 df1.to_csv(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\Female_25.csv',encoding='utf-8-sig')
 
+## Question 2:
+df2 = []
+for index, row in df.iterrows():
+    if row["age"]< 23 and row["gender"] !="F":
+            df2.append(row)
+df2 = pd.DataFrame(df2,columns=df.columns)
+print(df2)
+df2.to_csv(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\Men_23.json',encoding='utf-8-sig')
 
 
 

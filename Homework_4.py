@@ -58,6 +58,12 @@ print(df3_even)
 df3_x10 = list(map(lambda i: i * 10, df3))
 print(df3_x10)
 
+## Question 4:
+df3_even2 = [i if np.mod(i,2)==0 else i-1 for i in df3]
+print(df3_even2)
+
+
+
 
 
 

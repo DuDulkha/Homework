@@ -44,12 +44,15 @@ print(df3_odd)
 df3_odd = list(filter(lambda i: (i%2 != 0), df3))
 print(df3_odd)
 
-'''## Question 2:
+## Question 2:
 df3_even=[]
 for i in df3:
      if np.mod(i,2) == 0:
           df3_even.append(i)
-print(df3_even)'''
+print(df3_even)
+
+df3_even = list(filter(lambda i: (i%2 == 0), df3))
+print(df3_even)
 
 
      

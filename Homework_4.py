@@ -62,15 +62,19 @@ print(df3_x10)
 df3_even2 = [i if np.mod(i,2)==0 else i-1 for i in df3]
 print(df3_even2)
 
+## Question 5:
+for i in df3:
+    if i < 52:  #1
+        print(i, "< 52")
+    elif 53 <= i <= 55:
+        print(i, "53-55")
+    elif 56 <= i <= 58:
+        print(i, "56-58")
+    else:
+        print(i,  ">=59")
 
 
 
-
-
-     
-
-## Question 2:
-df.loc[24:27,['firstName','age']]
 
 ## Question 3:
 res = df.groupby(['gender']).agg({'age': ["mean","max","min"], 'salary': ["mean","max","min"]})

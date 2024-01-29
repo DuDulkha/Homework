@@ -77,6 +77,10 @@ for i in df3:
 i = 50    
 while i < 59:
     print(i)
-    i += 1 # i = i + 1
+    i += 1
 
-
+## Question 7:
+i = 50    
+while i < 56:
+    print(i)
+    i += 1

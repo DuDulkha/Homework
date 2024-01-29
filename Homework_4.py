@@ -88,4 +88,10 @@ while i < 55:
     print(i)
     i += 1
 ######################### Task 3 #########################
+## Question 1:  
+list1=df["firstName"]
+list2=df["lastName"]   
+for i in zip(list1, list2):
+    print(i)
+
     

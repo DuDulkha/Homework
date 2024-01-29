@@ -75,12 +75,17 @@ for i in df3:
 
 ## Question 6:
 i = 50    
-while i < 59:
-    print(i)
+while i < 60:
+    if i < 59:
+        print(i)
+    else:
+        pass
     i += 1
 
 ## Question 7:
 i = 50    
-while i < 56:
+while i < 55:
     print(i)
     i += 1
+######################### Task 3 #########################
+    

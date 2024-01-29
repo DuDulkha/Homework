@@ -73,17 +73,10 @@ for i in df3:
     else:
         print(i,  ">=59")
 
+## Question 6:
+i = 50    
+while i < 59:
+    print(i)
+    i += 1 # i = i + 1
 
 
-
-## Question 3:
-res = df.groupby(['gender']).agg({'age': ["mean","max","min"], 'salary': ["mean","max","min"]})
-res.columns
-len(res.columns)
-res.columns = ['age_Mean','age_Max','age_Min','sal_Mean','sal_Max', 'sal_Min']
-print(res)
-
-## Question 4:
-table = pd.pivot_table(df, values=['age','salary'], index=['gender'], \
-                       aggfunc={'age':["mean","max","min"], 'salary':["mean","max","min"]})
-print(table)

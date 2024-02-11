@@ -1,24 +1,26 @@
-import numpy as np
+def list_sum(numbers):
+    total = 0
+    for i in numbers:
+        total += i
+    return total
 
-def mmod_func(number):
-    """
-    multiple by two
-    """
-    return number*2
+def list_range(numbers):
+    num=sorted(numbers)
+    range=num[-1]-num[0]
+    return range
 
-def mmod_funcA(number):
-    """
-    multiple by two
-    """
-    return number*2
+def list_product(numbers):
+    result = 1
+    for num in numbers:
+        result *= num
+    return result
 
-print("I am outside")
-yy = 10
+def main():
+    my_list = [1, 2, 3, 4, 5,6,7,8,9]
+
+    print("Sum of my_list:", list_sum(my_list))
+    print("Range of my_list:", list_range(my_list))
+    print("Product of my_list:", list_product(my_list))
 
 if __name__ == "__main__":
-    print("I am inside")
-    input = 18
-    res = mmod_funcA(input)
-    print(res)
-    print(res == 36)
-    assert res == input*2
+    main()

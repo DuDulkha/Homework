@@ -13,7 +13,7 @@ data = [tuple(row) for row in df.values]
 
 connection = psycopg2.connect(
         user = "postgres",
-        password = "postgres",
+        password = "Iveel724",
         host = "localhost", # 198.16.16.01, 127.0.0.1, www.prod.xxxcompany.com/serverdb
         port = "5432",
         database = "week6"
@@ -39,6 +39,17 @@ VALUES (%s,%s,%s,%s,%s)""", data)
 connection.commit()
 
 
+### Question 2 ###
 
+cursor.execute("""SELECT firstname, lastname
+FROM data
+LIMIT 3;""")
+connection.commit()
+
+record = cursor.fetchall()
+for row in record:
+    print(row)
+
+### Question 2 ###
 
 

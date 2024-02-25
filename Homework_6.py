@@ -50,6 +50,17 @@ record = cursor.fetchall()
 for row in record:
     print(row)
 
-### Question 2 ###
+### Question 3 ###
+cursor.execute("""SELECT firstname, age
+FROM data
+ORDER BY id DESC
+LIMIT 3;""")
+connection.commit()
+
+record = cursor.fetchall()
+for row in record:
+    print(row)
 
 
+cursor.close()
+connection.close()

@@ -13,7 +13,7 @@ def data_prep_IFS():
 
 def data_prep():
     '''Clean data from IFS, save in all frequancies'''
-    df=pd.read_csv('C:/Users/dudul/OneDrive/Documents/Dudu/Programming/Py4Econ/Homework/Homework_7/Lending.csv',low_memory=False)
+    df=pd.read_csv('/Homework/Homework_7/Lending.csv',low_memory=False)
     df = df.drop(df.columns[0], axis=1)
     df = pd.melt(df, id_vars=['Country Name', 'Indicator Name'], var_name='period', value_name='LendingRate')
     df.columns = ['country','indicator','period','i_lend']
@@ -38,6 +38,6 @@ def data_prep():
     dfq['year']=dfq['period'].str[:4]
     dfq['quarter']=dfq['period'].str[5:]
 
-    dfm.to_csv('C:/Users/dudul/OneDrive/Documents/Dudu/Programming/Py4Econ/Homework/Homework_7/dfm.csv')
-    dfq.to_csv('C:/Users/dudul/OneDrive/Documents/Dudu/Programming/Py4Econ/Homework/Homework_7/dfq.csv')
-    dfy.to_csv('C:/Users/dudul/OneDrive/Documents/Dudu/Programming/Py4Econ/Homework/Homework_7/dfy.csv')
+    dfm.to_csv('/Homework/Homework_7/dfm.csv')
+    dfq.to_csv('/Homework/Homework_7/dfq.csv')
+    dfy.to_csv('/Homework/Homework_7/dfy.csv')

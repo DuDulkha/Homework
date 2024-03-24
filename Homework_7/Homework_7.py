@@ -10,7 +10,7 @@ ut.data_prep_IFS()
 ut.data_prep()
 
 
-df=pd.read_csv('Homework_7/dfm.csv')
+df=pd.read_csv('/Homework_7/dfm.csv')
 
 #Because of IFS data structure, data is repeated 3 times, keep only one
 max=df.groupby(['country','period'],as_index=False)['i_lend'].max()

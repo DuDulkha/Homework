@@ -1,7 +1,6 @@
 import re
 
 ############### Task 1 ################
-
 text=" Archaeologists have found evidence for human occupation of Mongolia starting in the Lower Paleolithic (perhaps 500,000 years ago). \
 The area has shown evidence of human occupation ever since. Before GENGHIS Khan, the Mongolian nomads followed a typical pattern of nomadic peoples, \
 alternating between vast empires and small-scale tribal organization. The first empire was built by the Hunnu, a proto-Mongolian tribe. \

@@ -42,12 +42,12 @@ print(df)
 ## Question 2:
 df1 = df[(df["age"]>27) & (df["gender"] != "M")]
 len(df1)
-df1.to_csv(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\new_data.csv',encoding='utf-8-sig')
+df1.to_csv(r'D:\\Programming\\Py4Econ\Homework\new_data.csv',encoding='utf-8-sig')
 
 ## Question 3:
 df2 = df[(df["age"]<23) & (df["gender"] == "M")]
 len(df2)
-df2.to_json(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\new_data.json', indent=4,force_ascii=False)
+df2.to_json(r'D:\\Programming\\Py4Econ\Homework\new_data.json', indent=4,force_ascii=False)
 
 ######## Task 2 #########
 ## Question 1:

@@ -51,10 +51,10 @@ df2.to_json(r'D:\\Programming\\Py4Econ\Homework\new_data.json', indent=4,force_a
 
 ######## Task 2 #########
 ## Question 1:
-df.iloc[16,2:5]
+df.iloc[16,2:5]                                                              # 16th raw column 2 to 5
 
 ## Question 2:
-df.loc[24:27,['firstName','age']]
+df.loc[24:27,['firstName','age']]                                           # show first name and age of id between 24 and 27
 
 ## Question 3:
 res = df.groupby(['gender']).agg({'age': ["mean","max","min"], 'salary': ["mean","max","min"]})

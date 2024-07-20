@@ -64,8 +64,8 @@ print(df3_even2)
 
 ## Question 5:
 for i in df3:
-    if i < 52:  #1
-        print(i, "< 52")
+    if i <= 52:  #1
+        print(i, "<= 52")
     elif 53 <= i <= 55:
         print(i, "53-55")
     elif 56 <= i <= 58:

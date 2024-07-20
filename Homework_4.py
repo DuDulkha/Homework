@@ -6,7 +6,7 @@ import datetime
 import string
 import os
 os.getcwd()
-os.chdir(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Introduction_Python\3_Dataframe\data')
+os.chdir(r'D:\Programming\Py4Econ\Introduction_Python\3_Dataframe\data')
 df = pd.read_excel("data.xlsx") # //
 
 ######################### Task 1 #########################
@@ -18,7 +18,7 @@ for index, row in df.iterrows():
             df1.append(row)
 df1 = pd.DataFrame(df1,columns=df.columns)
 print(df1)
-df1.to_csv(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\Female_25.csv',encoding='utf-8-sig')
+df1.to_csv(r'D:\Programming\Py4Econ\Homework\Female_25.csv',encoding='utf-8-sig')
 
 ## Question 2:
 df2 = []
@@ -27,7 +27,7 @@ for index, row in df.iterrows():
             df2.append(row)
 df2 = pd.DataFrame(df2,columns=df.columns)
 print(df2)
-df2.to_csv(r'C:\Users\dudul\OneDrive\Documents\Dudu\Programming\Py4Econ\Homework\Men_23.json',encoding='utf-8-sig')
+df2.to_csv(r'D:\Programming\Py4Econ\Homework\Men_23.json',encoding='utf-8-sig')
 
 
 ######################### Task 2 #########################

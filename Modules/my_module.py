@@ -16,7 +16,7 @@ def list_product(numbers):
     return result
 
 def main():
-    my_list = [1, 2, 3, 4, 5,6,7,8,9]
+    my_list = [1, 2, 3, 4, 5,6,7,8,900]
 
     print("Sum of my_list:", list_sum(my_list))
     print("Range of my_list:", list_range(my_list))
